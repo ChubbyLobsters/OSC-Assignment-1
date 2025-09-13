@@ -1,0 +1,11 @@
+e-mail,birth date,groups,sharedFolder
+edsger.dijkstra@tue.nl,11/05/1930,"sudo,staff",/staffData
+john.mccarthy@caltech.edu,4/09/1927,"sudo,visitor",/visitorData
+andrew.tanenbaum@vua.nl,16/03/1944,staff,/staffData
+alan.turing@cam.ac.uk,23/06/1912,visitor,/visitorData
+linus.torvalds@linux.org,28/12/1969,sudo,
+bjarne.stroustroup@tamu.edu,30/12/1950,,/visitorData
+ken.thompson@google.com,4/02/1973,"sudo,visitor",
+james.gosling@sun.com,19/05/1955,staff,/staffData
+tim.berners-lee@mit.edu,8/06/1955,"sudo,visitor",/visitorData
+
