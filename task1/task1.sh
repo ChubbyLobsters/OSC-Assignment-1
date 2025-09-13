@@ -21,6 +21,21 @@ get_csv_file() {
     [[ -f "$input" ]] || { echo "❌ File not found: $input"; exit 1; }
 }
 
+# ─── Generate Unsername from email Function  ──────────────────────────────
+generate_username() {
+    local email="$1"
+    local fullName="${email%@*}"         # Remove domain
+    local firstName="${fullName%%.*}"    # First name (before dot)
+    local surname="${fullName##*.}"      # Surname (after dot)
+
+    local firstInitial="$(echo "$surname" | cut -c1 | tr '[:upper:]' '[:lower:]')"
+    local capFirst="$(echo "${firstName:0:1}" | tr '[:lower:]' '[:upper:]')${firstName:1}"
+
+    echo "${firstInitial}${capFirst}"
+}
+
+
+
 setup_users() {
     declare -A folderGroups  # Track which groups own which folders
 
